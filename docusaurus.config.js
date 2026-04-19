@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
     title: 'DerpyNewbie',
     tagline: '',
-    favicon: '../img/favicon.ico',
+    favicon: 'https://derpynewbie.dev/favicon.ico',
 
     // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
     future: {
@@ -59,8 +59,7 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            // Replace with your project's social card
-            image: '../img/social-card.jpg',
+            image: 'https://derpynewbie.dev/images/Profile_Peace.png',
             colorMode: {
                 respectPrefersColorScheme: true,
             },
@@ -68,7 +67,7 @@ const config = {
                 title: '',
                 logo: {
                     alt: 'DerpyNewbie Icon',
-                    src: '../img/icon_512.svg',
+                    src: 'https://derpynewbie.dev/icon_512.png',
                     style: {borderRadius: '50%'}
                 },
                 items: [

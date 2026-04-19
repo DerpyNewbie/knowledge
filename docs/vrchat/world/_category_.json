@@ -1,0 +1,9 @@
+﻿{
+  "label": "World",
+  "link": {
+    "type": "generated-index",
+    "title": "World",
+    "description": "VRChat の World に関係する情報です",
+    "slug": "vrchat/world/"
+  }
+}

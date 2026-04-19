@@ -102,7 +102,7 @@ const config = {
                         position: 'left',
                     },
                     {
-                        href: 'https://github.com/facebook/docusaurus',
+                        href: 'https://github.com/derpynewbie/knowledge',
                         label: 'GitHub',
                         position: 'right',
                     },

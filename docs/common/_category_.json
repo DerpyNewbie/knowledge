@@ -1,0 +1,10 @@
+﻿{
+  "position": 100000,
+  "label": "Common",
+  "link": {
+    "type": "generated-index",
+    "title": "Common",
+    "description": "乱雑な知識の巣窟",
+    "slug": "common/"
+  }
+}

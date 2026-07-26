@@ -82,7 +82,7 @@ const config = {
                         position: 'left',
                     },
                     {
-                        to: 'https://derpynewbie.dev/social',
+                        to: 'https://derpynewbie.dev/links',
                         label: 'Social',
                         position: 'left',
                     },

@@ -15,11 +15,17 @@ var worker_default = {
         __name(MethodNotAllowed, "MethodNotAllowed");
         if (request.method !== "GET") return MethodNotAllowed(request);
         const url = new URL(request.url);
-        if (!url.pathname.toLowerCase().startsWith("/knowledge")) return new Response("Not Found", {
-            status: 404
-        });
 
-        return env.ASSETS.fetch(request);
+        if (!url.pathname.toLowerCase().startsWith("/knowledge")) {
+            console.log("looking at non-knowledge");
+            return new Response("Looks like Not Found", {
+                status: 404
+            });
+        }
+
+        url.pathname = url.pathname.replace(/^\/knowledge/, "") || "/";
+
+        return env.ASSETS.fetch(new Request(url, request));
     }
 };
 export {

@@ -1,5 +1,5 @@
 ﻿var __defProp = Object.defineProperty;
-var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
+var __name = (target, value) => __defProp(target, "name", {value, configurable: true});
 
 // worker.ts
 var worker_default = {
@@ -12,12 +12,13 @@ var worker_default = {
                 }
             });
         }
+
         __name(MethodNotAllowed, "MethodNotAllowed");
         if (request.method !== "GET") return MethodNotAllowed(request);
         const url = new URL(request.url);
 
         if (!url.pathname.toLowerCase().startsWith("/knowledge")) {
-            console.log("looking at non-knowledge");
+            console.log("looking at garbage");
             return new Response("Looks like Not Found", {
                 status: 404
             });

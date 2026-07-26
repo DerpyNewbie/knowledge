@@ -3,7 +3,7 @@ var __name = (target, value) => __defProp(target, "name", { value, configurable:
 
 // worker.ts
 var worker_default = {
-    async fetch(request) {
+    async fetch(request, env, ctx) {
         async function MethodNotAllowed(request2) {
             return new Response(`Method ${request2.method} not allowed.`, {
                 status: 405,
